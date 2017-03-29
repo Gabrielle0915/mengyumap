@@ -1,0 +1,1 @@
+mengyumap is a full stack mini map project accomplished by Mengyu Li and instructed by @yinfeiru. The implementation of the project is originated from and improved on the code provided by the instructor.  
