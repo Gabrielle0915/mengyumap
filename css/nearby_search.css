@@ -1,0 +1,97 @@
+/*html and body must set height, otherwise html has random height, and body has 0 height */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body #map {
+    height: 100%;
+    width: 100%;
+}
+
+html body #place-info-wrapper {
+  background-color: #4285F4;
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-408px);
+  display: none;
+}
+
+html body #place-info-wrapper.is-active {
+  display: block;
+}
+html body #place-info-wrapper.visible {
+  transform: translateX(0);
+}
+
+html body #place-info-wrapper #hero-header-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+html body #place-info-wrapper #hero-header-wrapper img {
+  width: 408px;
+  height: 305px;
+  top: -53px;
+  position: relative;
+}
+
+html body #place-info-wrapper #place-basic-info-wrapper {
+  width: 100%;
+  height: 105px;
+}
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info {
+  padding: 16px 24px 20px;
+}
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info .info-text {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info .info-text.place-review-score,
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info .info-text.place-type {
+  margin-top: 8px;
+  font-size: 13px;
+  color: white;
+}
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info .info-text.place-review-score {
+  height: 16px;
+}
+html body #place-info-wrapper #place-basic-info-wrapper #place-basic-info .info-text.place-type {
+  text-transform: capitalize;
+}
+html body #place-info-wrapper .place-info-visibility-toggle {
+  width: 23px;
+  height: 48px;
+  position: absolute;
+  right: -23px;
+  line-height: 48px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-left: 1px solid #D4D4D4;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  top: 8px;
+  outline: none;
+}
+html body #place-info-wrapper .place-info-visibility-toggle .triangle-icon {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid rgba(0, 0, 0, 0.7);
+  position: relative;
+  left: 2px;
+}
+html body #place-info-wrapper .place-info-visibility-toggle .triangle-icon.left {
+  border-left: 0;
+  border-right: 7px solid rgba(0, 0, 0, 0.7);
+}
+
